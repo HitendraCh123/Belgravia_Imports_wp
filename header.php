@@ -1,0 +1,68 @@
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Belgravia
+ */
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
+
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3 site-brand">
+          <a href="home">
+            <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/Logo_Belgravia.webp" alt="">
+          </a>
+          <!-- Toggle Bar -->
+          <div class="toggle-bar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="col-md-6 header-menu">
+          <ul class="main-menu">
+            <li><a href="http://localhost/Belgravia-imports/about/">About</a></li>
+            <li><a href="http://localhost/Belgravia-imports/services/">Services</a></li>
+            <li><a href="http://localhost/Belgravia-imports/brands/">Brands</a></li>
+            <li><a href="http://localhost/Belgravia-imports/contact/">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 header-right">
+          <ul class="social-list">
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="custom-btn"><a href="brands.html">Shop Products</a></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- Header Closed -->

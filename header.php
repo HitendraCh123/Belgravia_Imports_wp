@@ -37,9 +37,9 @@
       <div class="row">
 
         <div class="col-md-3 site-brand">
-          <a href="home">
-            <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/Logo_Belgravia.webp" alt="">
-          </a>
+         <a href="<?php echo home_url(); ?>">
+               <img src="<?php echo esc_url(wp_get_upload_dir()['baseurl'] . '/2026/03/Logo_Belgravia.webp'); ?>" alt="">
+            </a>
           <!-- Toggle Bar -->
           <div class="toggle-bar">
             <i class="fa fa-bars"></i>

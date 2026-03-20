@@ -48,10 +48,10 @@
 
         <div class="col-md-6 header-menu">
           <ul class="main-menu">
-            <li><a href="http://localhost/Belgravia-imports/about/">About</a></li>
-            <li><a href="http://localhost/Belgravia-imports/services/">Services</a></li>
-            <li><a href="http://localhost/Belgravia-imports/brands/">Brands</a></li>
-            <li><a href="http://localhost/Belgravia-imports/contact/">Contact</a></li>
+            <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+            <li><a href="<?php echo site_url('/services'); ?>">Services</a></li>
+            <li><a href="<?php echo site_url('/brands'); ?>">Brands</a></li>
+            <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
           </ul>
         </div>
 

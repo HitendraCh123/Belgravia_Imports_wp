@@ -21,7 +21,8 @@ get_header(); ?>
   <!-- Company Info Closed -->
 
 <!-- Brands section -->
-<?php get_template_part('template-parts/brands', 'section'); ?>
+<?php get_template_part('page-templates/brands', 'section'); ?>
+
 
   <!-- discover Brands -->
   <section class="discover-brands">
@@ -37,8 +38,8 @@ get_header(); ?>
         <div class="col-md-4 sec-box">
           <h2>Discover our brands</h2>
           <ul class="btn-list">
-            <li><a href="brands.html">Explore</a></li>
-            <li><a href="contact.html">Inquire</a></li>
+            <li><a href="<?php echo site_url('/brands'); ?>">Explore</a></li>
+            <li><a href="<?php echo site_url('/contact'); ?>">Inquire</a></li>
           </ul>
         </div>
         <div class="col-md-4 third-box">
@@ -53,7 +54,7 @@ get_header(); ?>
   <!-- discover Brands Closed -->
 
  <!-- slider -->
-  <?php get_template_part('template-parts/home', 'slider'); ?>
+  <?php get_template_part('page-templates/home', 'slider'); ?>
 <!-- slider closed -->
 
 

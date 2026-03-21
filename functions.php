@@ -138,16 +138,43 @@ add_action( 'widgets_init', 'belgravia_widgets_init' );
  * Enqueue scripts and styles.
  */
 function belgravia_scripts() {
-	wp_enqueue_style( 'belgravia-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'belgravia-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'belgravia-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+    // Main CSS
+    wp_enqueue_style('belgravia-style', get_stylesheet_uri(), array(), _S_VERSION);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
+    // Bootstrap CSS
+    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+
+    // Owl Carousel CSS
+    wp_enqueue_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+
+    // Font Awesome
+    wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    // Google Fonts
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap');
+
+
+    // jQuery
+    wp_enqueue_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), null, true);
+
+    // Bootstrap JS
+    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery-cdn'), null, true);
+
+    // Owl Carousel JS
+    wp_enqueue_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery-cdn'), null, true);
+
+    // Main JS
+    wp_enqueue_script(
+        'main-js',
+        get_template_directory_uri() . '/assets/js/main.js',
+        array('jquery-cdn', 'owl-carousel'),
+        null,
+        true
+    );
+
 }
-add_action( 'wp_enqueue_scripts', 'belgravia_scripts' );
+add_action('wp_enqueue_scripts', 'belgravia_scripts');
 
 /**
  * Implement the Custom Header feature.

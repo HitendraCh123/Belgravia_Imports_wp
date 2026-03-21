@@ -10,7 +10,6 @@
       <div class="row">
         <ul class="product-list">
 
-
           <li>
             <div class="img-box"><a href="tick-tock-tea.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/tick-tock-product-1.webp" alt=""></a>
             </div>

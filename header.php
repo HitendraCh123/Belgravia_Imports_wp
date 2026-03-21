@@ -17,13 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    type="text/css" media="all" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+
 	<?php wp_head(); ?>
 </head>
 
@@ -59,7 +53,7 @@
           <ul class="social-list">
             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
-          <div class="custom-btn"><a href="brands.html">Shop Products</a></div>
+          <div class="custom-btn"><a href="<?php echo site_url('/brands'); ?>">Shop Products</a></div>
         </div>
 
       </div>

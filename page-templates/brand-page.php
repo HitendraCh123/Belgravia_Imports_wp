@@ -4,7 +4,7 @@
 get_header(); ?>
 
 
-<?php get_template_part('template-parts/brands', 'section'); ?>
+<?php get_template_part('page-templates/brands', 'section'); ?>
 
       <!-- Our Values -->
   <section class="about-values">
@@ -61,7 +61,7 @@ get_header(); ?>
     <!-- Our Values Closed -->
 
  <!-- slider -->
-  <?php get_template_part('template-parts/home', 'slider'); ?>
+  <?php get_template_part('page-templates/home', 'slider'); ?>
 <!-- slider closed -->
 
 

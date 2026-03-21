@@ -333,7 +333,7 @@ get_header(); ?>
         </div>
         <div class="col-md-6 right">
           <p>Since 1987, Belgravia has built a reputation as tastemakers and trusted partners.</p>
-          <a href="brands.html" class="explore-btn">Explore Brands</a>
+          <a href="<?php echo site_url('/brands'); ?>" class="explore-btn">Explore Brands</a>
         </div>
       </div>
     </div>
@@ -366,7 +366,7 @@ get_header(); ?>
       <p>The right partner can make all the difference. Let Belgravia open the doors, tell your story, and elevate your
         brand.</p>
       <div class="btn-row">
-        <a href="contact.html" class="cta-btn">Contact Us</a>
+        <a href="<?php echo site_url('/contact'); ?>"class="cta-btn">Contact Us</a>
         <!-- <a href="#" class="cta-btn-outline">Explore Our Brands</a> -->
       </div>
     </div>

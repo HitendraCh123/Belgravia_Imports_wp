@@ -43,7 +43,7 @@ get_header(); ?>
     <!-- Our Story Closed -->
 
 <!-- Brands logo secion -->
-<?php get_template_part('template-parts/logos', 'section'); ?>
+<?php get_template_part('page-templates/logos', 'section'); ?>
 <!-- Brands logo secion end -->
 
     <!-- Gallery -->
@@ -54,26 +54,26 @@ get_header(); ?>
             </div>
             <div class="gallery-grid">
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/Image1_Belgravia.webp" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image1_Belgravia.webp" alt="">
                 </div>
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/savoursmith-product-1-3-scaled.webp"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/savoursmith-product-1.webp"
                         alt="Savoursmiths">
                 </div>
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/dirnks-bakery-product-1.webp"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dirnks-bakery-product-1.webp"
                         alt="The Drinks Bakery">
                 </div>
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/tick-tock-product-1.webp"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tick-tock-product-1.webp"
                         alt="Tick Tock Tea">
                 </div>
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/healsi-water-product.webp"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/healsi-water-product.webp"
                         alt="Healsi Water">
                 </div>
                 <div class="img-item">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/rose-bud-product-1.webp"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rose-bud-product-1.webp"
                         alt="Rosebud Preserves">
                 </div>
             </div>
@@ -87,7 +87,7 @@ get_header(); ?>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-5">
-                    <img src="http://localhost/Belgravia-imports/wp-content/uploads/2026/03/Belgravia1.png" alt="Ronnie and Lilly Dick"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Belgravia+1.png" alt="Ronnie and Lilly Dick"
                         style="width:100%;border-radius:12px;">
                 </div>
                 <div class="col-md-7">
@@ -97,8 +97,8 @@ get_header(); ?>
                         specialty foods. What started as a passion for quality has grown into a trusted partnership with
                         producers who share our commitment to premium, healthy, and authentic products.</p>
                     <div class="btn-row">
-                        <a href="brands.html" class="cta-btn">Explore Our Brands</a>
-                        <a href="contact.html" class="cta-btn-outline">Get In Touch</a>
+                 <a href="<?php echo site_url('/brands'); ?>" class="cta-btn">Explore Our Brands</a>
+              <a href="<?php echo site_url('/contact'); ?>" class="cta-btn-outline">Get In Touch</a>
                     </div>
                 </div>
             </div>

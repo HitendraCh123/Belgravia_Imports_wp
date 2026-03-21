@@ -59,3 +59,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
+
+
+
+    // Tick tock page js
+
+        const videoFrame = document.querySelector(".video-frame");
+    const iframe = document.querySelector(".youtube-video");
+
+    videoFrame.addEventListener("click", function () {
+
+      if (!videoFrame.classList.contains("active")) {
+        videoFrame.classList.add("active");
+
+        iframe.src = "https://www.youtube-nocookie.com/embed/1MjNV-o-hmI?autoplay=1";
+      }
+
+    });

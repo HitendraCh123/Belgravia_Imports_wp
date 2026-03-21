@@ -11,18 +11,18 @@
         <ul class="product-list">
 
           <li>
-            <div class="img-box"><a href="tick-tock-tea.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/tick-tock-product-1.webp" alt=""></a>
+            <div class="img-box"><a href="<?php echo site_url('/tick-tock-tea'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/tick-tock-product-1.webp" alt=""></a>
             </div>
             <div class="content-box">
               <div class="title">
-                <span><a href="tick-tock-tea.html">TICK TOCK TEA</a></span>
+                <span><a href="<?php echo site_url('/tick-tock-tea'); ?>">TICK TOCK TEA</a></span>
 
               </div>
               <p>Britain's finest Rooibos collection, naturally caffeine-free. Over a century of understanding what
                 makes exceptional tea.</p>
               <div class="brand-btn-row">
 
-                <div class="custom-btn"><a href="tick-tock-tea.html">Learn more <i class="fa fa-arrow-right"
+                <div class="custom-btn"><a href="<?php echo site_url('/tick-tock-tea'); ?>">Learn more <i class="fa fa-arrow-right"
                       aria-hidden="true"></i></a></div>
 
               </div>

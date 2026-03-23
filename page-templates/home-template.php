@@ -6,7 +6,7 @@ get_header(); ?>
 
 
   <!-- Company Info -->
-  <section class="company-info">
+  <section class="company-info" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/team-from-above.jpg">
     <div class="container">
       <div class="inner-box">
         <h1>Curating British and European excellence for North America's most discerning markets</h1>
@@ -22,7 +22,7 @@ get_header(); ?>
 
 <!-- Brands section -->
 <?php get_template_part('page-templates/brands', 'section'); ?>
-
+<!-- Brands section end -->
 
   <!-- discover Brands -->
   <section class="discover-brands">

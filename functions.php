@@ -173,6 +173,22 @@ function belgravia_scripts() {
         true
     );
 
+	wp_enqueue_style(
+    'style-css',
+    get_template_directory_uri() . '/assets/css/style.css',
+    array(),
+    _S_VERSION
+);
+
+	//  for responsive css
+
+	wp_enqueue_style(
+    'responsive-css',
+    get_template_directory_uri() . '/assets/css/responsive.css',
+    array(),
+    _S_VERSION
+);
+
 }
 add_action('wp_enqueue_scripts', 'belgravia_scripts');
 

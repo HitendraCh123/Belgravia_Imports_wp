@@ -5,7 +5,7 @@
 get_header(); ?>
 
 <!-- Hero -->
-<section class="tt-hero">
+<section class="tt-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/Belgravia-tick-tock-tea.jpg">
   <div class="container">
     <div class="inner">
       <div class="eyebrow">Belgravia Imports Presents</div>
@@ -160,6 +160,35 @@ get_header(); ?>
   </div>
 </section>
   <!-- Product Range Closed -->
+
+   <!-- slider -->
+  <?php get_template_part('page-templates/home', 'slider'); ?>
+<!-- slider closed -->
+  
+  <section class="amazon-shop-section">
+    <div class="container">
+      <h2>Shop Tick Tock Tea</h2>
+      <div class="amozon-shop-btn"><a
+          href="https://www.amazon.com/stores/TickTockTeas/page/15D34A83-A06C-453E-8231-76BD7B91DB7D?lp_asin=B00E35O3YC&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/amazon-button.webp" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CTA -->
+  <section class="tt-cta">
+    <div class="container">
+      <h2>Shop <br> wholesale</h2>
+
+      <div class="btn-row">
+        <a href="<?php echo site_url('/contact'); ?>" class="cta-btn">INQUIRE</a>
+        <a href="https://www.faire.com/brand/b_b2t2uedr4w?refReqId=nwksyyubtueve7mmkpz8e7nj9&refType=SUGGESTIONS_BRANDS" class="cta-btn">FAIRE</a>
+      </div>
+    </div>
+  </section>
+  <!-- CTA Closed -->
 
 <style>
 /* ── tick-tock-video section ── */

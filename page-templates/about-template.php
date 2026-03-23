@@ -4,7 +4,7 @@
 get_header(); ?>
 
     <!-- About Hero -->
-    <section class="about-hero">
+    <section class="about-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/WAREHOUSING_large.webp">
         <div class="container">
             <div class="inner">
                 <h1>At Belgravia Imports, we don't just bring products to market—we architect culinary revolutions</h1>

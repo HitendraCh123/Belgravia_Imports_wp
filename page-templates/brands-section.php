@@ -63,33 +63,33 @@
             </div>
           </li>
           <li>
-            <div class="img-box"><a href="healsi-water.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/healsi-water-product.webp" alt=""></a>
+            <div class="img-box"><a href="<?php echo site_url('/heasli-water'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/healsi-water-product.webp" alt=""></a>
             </div>
             <div class="content-box">
               <div class="title">
-                <span><a href="healsi-water.html">HEALSI WATER</a></span>
+                <span><a href="<?php echo site_url('/tick-tock-tea'); ?>">HEALSI WATER</a></span>
 
               </div>
               <p>Portuguese spring water with exceptional silica content. Discovered through decades of European
                 research into pure water sources.</p>
               <div class="brand-btn-row">
-                <div class="custom-btn"><a href="healsi-water.html">Learn more <i class="fa fa-arrow-right"
+                <div class="custom-btn"><a href="<?php echo site_url('/heasli-water'); ?>">Learn more <i class="fa fa-arrow-right"
                       aria-hidden="true"></i></a></div>
 
               </div>
             </div>
           </li>
           <li>
-            <div class="img-box"><a href="the-drinks-bakery.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dirnks-bakery-product-1.webp"
+            <div class="img-box"><a href="<?php echo site_url('/the-drinks-bakery'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/dirnks-bakery-product-1.webp"
                   alt=""></a></div>
             <div class="content-box">
               <div class="title">
-                <span><a href="the-drinks-bakery.html">THE DRINKS BAKERY</a></span>
+                <span><a href="<?php echo site_url('/the-drinks-bakery'); ?>">THE DRINKS BAKERY</a></span>
               </div>
               <p>Deliciously rich, savory biscuits and artisan French twists thoughtfully crafted to balance with and
                 enhance the character of your favorite drinks.</p>
               <div class="brand-btn-row">
-                <div class="custom-btn"><a href="the-drinks-bakery.html">Learn more <i class="fa fa-arrow-right"
+                <div class="custom-btn"><a href="<?php echo site_url('/the-drinks-bakery'); ?>">Learn more <i class="fa fa-arrow-right"
                       aria-hidden="true"></i></a></div>
                 <!-- <div class="custom-btn"><a
                     href="https://www.faire.com/brand/b_c6pj9ym6gn?refReqId=euqtqx6ypyhzyusevcc6vh9nq&refType=SUGGESTIONS_BRANDS">Wholesale

@@ -1,0 +1,1003 @@
+@media (max-width: 992px) {
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-hero .inner {
+        padding: 40px 30px;
+    }
+
+    .services-hero h1 {
+        font-size: 38px;
+    }
+
+    .services-intro .text-col {
+        margin-bottom: 40px;
+    }
+
+    .services-intro .img-col img {
+        height: 350px;
+    }
+
+    .services-process .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-process .col-md-4 {
+        margin-bottom: 40px;
+    }
+
+    .services-process .step-divider {
+        display: none !important;
+    }
+
+    .services-process .step-item {
+        padding: 0 20px;
+    }
+
+    .services-process .step-num {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    .services-channels .text-col {
+        padding-left: 15px;
+        margin-top: 40px;
+    }
+
+    .services-channels .img-col img {
+        height: 350px;
+    }
+
+    .services-hq .text-col h2 {
+        font-size: 38px;
+    }
+
+    .services-hq .img-col {
+        margin-top: 40px;
+    }
+
+    section {
+        padding: 50px 0 !important;
+    }
+
+    /* HERO */
+    .about-hero .inner {
+        padding: 40px 25px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+
+    .about-hero p {
+        font-size: 17px;
+    }
+
+    /* STORY */
+    .about-story .text-col {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-story .img-col img {
+        height: auto !important;
+    }
+
+    .about-story .accent-img {
+        left: 20px;
+        bottom: -30px;
+        width: 150px;
+        height: auto;
+    }
+
+    /* VALUES */
+    .about-values .value-item {
+        height: auto !important;
+        margin-bottom: 25px;
+    }
+
+    /* HERITAGE */
+    .about-heritage .inner-box {
+        padding: 40px 20px;
+    }
+
+    .about-heritage .stats-row {
+        gap: 40px;
+    }
+
+    .about-heritage .stat-item .number {
+        font-size: 48px;
+    }
+
+    /* GALLERY */
+    .about-gallery .gallery-grid .img-item {
+        width: 50% !important;
+    }
+
+    /* CTA */
+    .about-cta .btn-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-cta .cta-btn,
+    .about-cta .cta-btn-outline {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .contact-page .img-box {
+        padding-left: 24px;
+        margin-top: 40px;
+    }
+
+    .discover-brands .row {
+        flex-direction: column;
+    }
+
+    .discover-brands .first-box,
+    .discover-brands .sec-box {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .discover-brands .img-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .discover-brands .img-list li {
+        width: 45%;
+    }
+
+    .discover-brands .img-list img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .discover-brands .btn-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+  .db-hero {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .db-hero h1 {
+    font-size: 46px;
+  }
+
+  .db-about .text-col {
+    padding-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  .db-about .img-col img {
+    height: 380px;
+  }
+
+  .db-dragons .video-frame img {
+    height: 300px;
+  }
+            .hw-hero {
+                min-height: auto;
+                padding: 80px 0 60px;
+            }
+
+            .hw-hero h1 {
+                font-size: 46px;
+            }
+
+            .hw-intro .text-col {
+                padding-left: 15px;
+                margin-top: 35px;
+            }
+
+            .hw-intro .img-col img {
+                height: 380px;
+            }
+
+
+
+            .hw-origin .text-col {
+                margin-bottom: 40px;
+            }
+
+            .hw-origin .img-col img {
+                height: 380px;
+            }
+
+            .hw-stats .stat-item {
+                min-width: 160px;
+            }
+    .pp-hero .pp-hero-inner {
+        padding: 40px 30px;
+    }
+
+    .pp-hero h1 {
+        font-size: 40px;
+    }
+
+    .pp-intro .pp-intro-grid {
+        flex-direction: column;
+    }
+
+    .pp-intro .pp-intro-text {
+        width: 100%;
+        padding: 60px 30px;
+    }
+
+    .pp-intro .pp-intro-img {
+        width: 100%;
+    }
+
+    .pp-intro .pp-intro-img img {
+        min-height: 340px;
+    }
+
+    .pp-pillars {
+        padding: 70px 0;
+    }
+
+    .pp-pillars-grid {
+        flex-direction: column;
+    }
+
+    .pp-pillars-grid .pp-pillar-col {
+        width: 100%;
+    }
+
+    .pp-pillar-card {
+        margin-bottom: 24px;
+    }
+
+    .pp-pillars-grid .pp-pillar-divider {
+        display: none;
+    }
+
+    .pp-benefits-grid .pp-benefit-card {
+        width: calc(50% - 14px);
+    }
+
+    .pp-process .pp-process-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .pp-process .pp-process-steps {
+        width: 100%;
+    }
+
+    .pp-process .pp-process-img {
+        width: 100%;
+    }
+
+    .pp-process .pp-process-img img {
+        min-height: 320px;
+    }
+
+    .pp-channels .pp-channels-inner {
+        padding: 50px 30px;
+    }
+
+    .pp-commitment .pp-commitment-grid {
+        flex-direction: column;
+    }
+
+    .pp-commitment .pp-commitment-img {
+        width: 100%;
+    }
+
+    .pp-commitment .pp-commitment-img img {
+        height: 360px;
+    }
+
+    .pp-commitment .pp-commitment-text {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    .site-footer .row {
+        text-align: center;
+    }
+
+    .site-footer .col-md-5,
+    .site-footer .col-md-3,
+    .site-footer .col-md-4 {
+        margin-bottom: 30px;
+    }
+
+    .site-footer .social-list {
+        justify-content: center;
+    }
+
+    .site-footer .nav-list {
+        padding: 0;
+    }
+}
+
+
+/* ===============================
+MOBILE (767px and below)
+=================================*/
+
+@media (max-width: 767px) {
+
+    section {
+        padding: 30px 0 !important;
+    }
+
+    p {
+        font-size: 15px !important;
+    }
+
+    h1 {
+        font-size: 28px !important;
+        margin-bottom: 10px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .cta-btn {
+        padding: 12px 25px !important;
+        font-size: 16px !important;
+    }
+
+    .about-values {
+        padding: 30px 0px 0px !important;
+    }
+
+    .about-cta .cta-btn,
+    .about-cta .cta-btn-outline {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+
+    /* HERO */
+    .about-hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .about-story .text-col h2 {
+        font-size: 28px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    /* STORY */
+    .about-story .row {
+        flex-direction: column;
+    }
+
+    .about-story .text-col {
+        margin-bottom: 0px;
+    }
+
+    .about-story .img-col {
+        margin-top: 20px;
+    }
+
+    .about-story .accent-img {
+        display: none;
+    }
+
+    .about-values .section-header h2,
+    .about-heritage h2,
+    .about-gallery .section-header h2,
+    .about-cta h2 {
+        font-size: 28px;
+        margin-bottom: 0px;
+    }
+
+    .about-values .section-header {
+        margin-bottom: 20px;
+    }
+
+    .about-gallery .gallery-grid .img-item {
+        width: 100% !important;
+    }
+
+    .about-gallery .gallery-grid .img-item img {
+        height: 270px;
+        margin: 6px 0px;
+    }
+
+    .about-heritage .inner-box {
+        padding: 15px 10px;
+    }
+
+    /* HERITAGE */
+    .about-heritage .stats-row {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .about-heritage .stat-item .number {
+        font-size: 36px;
+    }
+
+    /* CTA */
+    .about-cta p {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    .services-intro .text-col h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .services-intro .text-col {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+
+    .services-list .service-card {
+        margin-bottom: 20px;
+    }
+
+    .services-list .section-header h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .services-list .section-header {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .services-cta h2,
+    .services-clients .section-header .left h2 {
+        font-size: 28px;
+    }
+
+    .services-cta .btn-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-channels .text-col h2 {
+        font-size: 28px;
+    }
+
+    .services-process {
+        padding: 60px 20px;
+    }
+
+    .services-process .section-title h2 {
+        font-size: 30px;
+    }
+
+    .services-process .section-title p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .services-process .inner-box {
+        padding: 40px 20px;
+    }
+
+    .services-process .row {
+        flex-direction: column;
+    }
+
+    .services-process .step-item {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .services-process .step-item h5 {
+        font-size: 20px;
+    }
+
+    .services-process .step-item p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .services-process .step-num {
+        font-size: 28px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .services-process .step-divider {
+        display: none !important;
+    }
+
+    .services-process .inner-box .row .col-md-4 {
+        width: 100% !important;
+        margin-bottom: 0;
+    }
+
+    .services-why .section-header {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .services-why .why-card {
+        margin-bottom: 20px;
+    }
+
+    .services-how .row .col-md-4,
+    .services-network .row .col-md-3 {
+        margin-bottom: 20px;
+    }
+
+
+    .services-why .section-header h2,
+    .services-how .section-header h2,
+    .services-network .section-header h2,
+    .services-hq .text-col h2 {
+        font-size: 28px;
+    }
+
+    .services-how .section-header h2 br {
+        display: none;
+    }
+
+    .services-how .section-header,
+    .services-network .section-header {
+        margin-bottom: 20px;
+    }
+
+    .services-list .service-card h4,
+    .services-how .channel-card h4,
+    .services-network .partner-card h4 {
+        font-size: 24px;
+    }
+
+    .services-how .channel-card {
+        padding: 18px;
+    }
+
+    .services-why .why-card h4 {
+        font-size: 24px;
+    }
+
+    .services-channels .channel-list li {
+        font-size: 16px;
+    }
+
+    .services-hq .img-col {
+        margin-top: 25px;
+    }
+
+    .services-hq .img-col img {
+        height: auto;
+    }
+
+
+    .brand-hero h1 {
+        font-size: 28px;
+    }
+
+    .brands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-section .form-inner {
+        padding: 30px 20px;
+    }
+
+    .contact-page h1 {
+        font-size: 36px;
+    }
+
+    .contact-page .img-box {
+        padding-left: 0;
+        margin-top: 36px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 32px;
+    }
+
+    .contact-signup h2 {
+        font-size: 34px;
+    }
+
+    .contact-signup input[type="email"] {
+        padding-right: 120px;
+    }
+
+    .contact-signup input[type="submit"] {
+        padding: 0 18px;
+        font-size: 10px;
+    }
+
+    .header-menu {
+        position: absolute;
+        top: 115px;
+        left: 0;
+        width: 100%;
+        background: #13215c;
+        display: none;
+    }
+
+    header.site-header .header-right {
+        display: none;
+    }
+
+    .site-header .site-brand {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0px 10px; */
+    }
+
+    .header-menu.active {
+        display: block;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        padding: 20px;
+        list-style: none;
+    }
+
+    .main-menu li {
+        text-align: center;
+        padding: 10px 0 !important;
+    }
+
+    .main-menu li a {
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .toggle-bar {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .company-info .inner-box {
+        padding: 30px 10px !important;
+    }
+
+    .company-info .inner-box h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .company-info p {
+        font-size: 15px;
+    }
+
+    .brands-product {
+        padding: 50px 20px;
+    }
+
+    .brands-product h1 {
+        font-size: 26px !important;
+    }
+
+    .brands-product h2 {
+        font-size: 18px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .brands-product .product-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .brands-product .product-list li {
+        width: 100% !important;
+    }
+
+    .brands-product .content-box .title {
+        margin-bottom: 10px;
+    }
+
+    .brands-product .img-box img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .brands-product .content-box {
+        padding-top: 15px;
+    }
+
+    .brands-product .content-box span a {
+        font-size: 18px;
+    }
+
+    .brands-product .content-box p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    .discover-brands {
+        padding: 30px 0px 0px !important;
+    }
+
+    .discover-brands .img-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .discover-brands .img-list li {
+        width: 100%;
+    }
+
+    .discover-brands .sec-box h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .discover-brands .btn-list {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .discover-brands .btn-list li a {
+        display: block;
+        text-align: center;
+        padding: 12px 20px;
+    }
+
+    .db-dragons .video-frame {
+        height: auto;
+        padding: 0px 10px;
+    }
+
+  .db-hero .hero-inner {
+    padding: 40px 25px;
+  }
+
+  .db-hero h1 br {
+    display: none;
+  }
+
+  .db-about .row {
+    flex-direction: column;
+  }
+
+  .db-press .press-item .pub-wsj {
+    font-size: 17px;
+  }
+
+  .db-press .press-item .pub-times,
+  .db-press .press-item .pub-telegraph {
+    font-size: 22px;
+  }
+
+  .db-about .text-col {
+    margin-bottom: 20px;
+  }
+
+  .db-wholesale h2 {
+    font-size: 38px;
+  }
+
+  .db-products {
+    padding-bottom: 0 !important;
+  }
+
+  .db-products .section-header {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .db-products .section-header h2 br{
+    display: none;
+  }
+
+  .db-wholesale .ws-btn {
+    padding: 14px 40px;
+  }
+
+  .db-dragons .video-frame img {
+    height: 200px;
+  }
+
+  .db-dragons .caption {
+    color: white;
+    margin: 20px 0px 0px;
+  }
+            .hw-hero h1 {
+                font-size: 34px;
+            }
+
+            .hw-hero p {
+                font-size: 16px;
+            }
+
+            .hw-intro .row,
+            .row,
+            .hw-origin .row {
+                flex-direction: column;
+            }
+
+            .hw-gallery .img-item,
+            .hw-gallery .img-item.wide {
+                width: 100%;
+            }
+
+            .hw-gallery .img-item img {
+                height: 240px;
+            }
+
+            .section-title h2,
+            .section-header h2 {
+                font-size: 34px;
+            }
+
+            .hw-stats .stats-inner {
+                flex-direction: column;
+            }
+
+            .hw-stats .stat-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(233, 213, 136, 0.2);
+            }
+
+            .hw-about .img-col img {
+                height: auto;
+            }
+
+            .hw-products-header {
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            .hw-product-col {
+                flex: 0 0 100%;
+            }
+
+            .hw-products-header h2 {
+                font-size: 30px;
+            }
+
+            .hw-products-header h2 br {
+                display: none;
+            }
+
+            .hw-shop-cta h2 {
+                margin-bottom: 20px !important;
+            }
+
+    .pp-hero .pp-hero-inner {
+        padding: 40px 20px;
+    }
+
+    .pp-hero h1 {
+        font-size: 30px;
+    }
+
+    .pp-hero p {
+        font-size: 16px;
+    }
+
+    .pp-pillars .pp-section-header,
+    .pp-benefits .pp-section-header {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .pp-benefits-grid .pp-benefit-card {
+        width: 100%;
+    }
+
+    .pp-step {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pp-pillar-card {
+        padding: 20px;
+    }
+
+    .pp-pillar-card h3 {
+        font-size: 25px;
+    }
+
+    .pp-pillar-card .pp-pillar-num {
+        font-size: 72px;
+    }
+
+    .pp-step .pp-step-num {
+        width: auto;
+        text-align: left;
+        font-size: 44px;
+    }
+
+    .pp-benefit-card h4 {
+        font-size: 25px;
+    }
+
+    .pp-cta .pp-btn-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pp-cta .pp-btn-primary,
+    .pp-cta .pp-btn-outline {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .site-footer {
+        padding: 50px 20px;
+    }
+
+    .site-footer .row {
+        text-align: left;
+    }
+
+    .site-footer .col-md-5,
+    .site-footer .col-md-3,
+    .site-footer .col-md-4 {
+        margin-bottom: 10px;
+    }
+
+    footer.site-footer .inner-box {
+        padding: 40px 20px;
+    }
+
+    .site-footer h5 {
+        font-size: 24px !important;
+        line-height: 1.4;
+    }
+
+    .site-footer .social-list {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 15px;
+    }
+
+    .site-footer .nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .site-footer .nav-list li {
+        margin-bottom: 10px;
+    }
+
+    .site-footer .nav-list li a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .site-footer p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .site-footer .copy-right {
+        margin-top: 25px !important;
+        font-size: 14px;
+        text-align: center;
+    }
+}

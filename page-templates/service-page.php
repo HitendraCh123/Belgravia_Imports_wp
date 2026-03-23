@@ -5,7 +5,7 @@ get_header(); ?>
 
 
   <!-- Services Hero -->
-  <section class="services-hero">
+  <section class="services-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/service-page_bg.webp">
     <div class="container">
       <div class="inner">
         <h1>Bring your unique flavors to America's table.</h1>

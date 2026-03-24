@@ -1016,10 +1016,26 @@ background-position: center;
 }
 
 .services-list .section-header {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 60px;
 }
+.services-list .section-header .services-list-right{
+    text-align: right;
+}
+.services-list .section-header .services-list-right .explore-btn {
+    background: #e9d588;
+    color: #000;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-family: 'antic_didoneregular';
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-flex;
+}
 
+.services-list .section-header .services-list-right .explore-btn:hover {
+    background: #eddda0;
+}
 .services-list .section-header h2 {
     font-family: 'antic_didoneregular';
     font-size: 50px;

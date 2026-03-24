@@ -43,9 +43,14 @@ get_header(); ?>
     <!-- Core Services -->
   <section class="services-list">
     <div class="container">
-      <div class="section-header">
-        <h2>What We Do For Brands</h2>
-        <p>We handle the complexities so you can focus on your craft.</p>
+    <div class="row section-header">
+        <div class="col-md-6">
+          <h2>What We Do For Brands</h2>
+          <p>We handle the complexities so you can focus on your craft.</p>
+        </div>
+        <div class="col-md-6 services-list-right">
+          <a href="<?php echo site_url('/partnership-pillars'); ?>" class="explore-btn">See our partnership pillars</a>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-4 d-flex">

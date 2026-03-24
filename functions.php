@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Belgravia functions and definitions
  *
@@ -7,9 +8,9 @@
  * @package Belgravia
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (! defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
 /**
@@ -19,17 +20,18 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function belgravia_setup() {
+function belgravia_setup()
+{
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on Belgravia, use a find and replace
 		* to change 'belgravia' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'belgravia', get_template_directory() . '/languages' );
+	load_theme_textdomain('belgravia', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 		* Let WordPress manage the document title.
@@ -37,19 +39,19 @@ function belgravia_setup() {
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'belgravia' ),
+			'menu-1' => esc_html__('Primary', 'belgravia'),
 		)
 	);
 
@@ -83,7 +85,7 @@ function belgravia_setup() {
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -100,7 +102,7 @@ function belgravia_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'belgravia_setup' );
+add_action('after_setup_theme', 'belgravia_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -109,22 +111,24 @@ add_action( 'after_setup_theme', 'belgravia_setup' );
  *
  * @global int $content_width
  */
-function belgravia_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'belgravia_content_width', 640 );
+function belgravia_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('belgravia_content_width', 640);
 }
-add_action( 'after_setup_theme', 'belgravia_content_width', 0 );
+add_action('after_setup_theme', 'belgravia_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function belgravia_widgets_init() {
+function belgravia_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'belgravia' ),
+			'name'          => esc_html__('Sidebar', 'belgravia'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'belgravia' ),
+			'description'   => esc_html__('Add widgets here.', 'belgravia'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -132,63 +136,69 @@ function belgravia_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'belgravia_widgets_init' );
+add_action('widgets_init', 'belgravia_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function belgravia_scripts() {
+function belgravia_scripts()
+{
 
-    // Main CSS
-    wp_enqueue_style('belgravia-style', get_stylesheet_uri(), array(), _S_VERSION);
+	// Main CSS
+	wp_enqueue_style('belgravia-style', get_stylesheet_uri(), array(), 1.2);
 
-    // Bootstrap CSS
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+	// Bootstrap CSS
+	wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
 
-    // Owl Carousel CSS
-    wp_enqueue_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+	// Owl Carousel CSS
+	wp_enqueue_style('owl-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
 
-    // Font Awesome
-    wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	// Font Awesome
+	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-    // Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap');
+	// Google Fonts
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap');
 
 
-    // jQuery
-    wp_enqueue_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), null, true);
+	// jQuery
+	wp_enqueue_script('jquery-cdn', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), null, true);
 
-    // Bootstrap JS
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery-cdn'), null, true);
+	// Bootstrap JS
+	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery-cdn'), null, true);
 
-    // Owl Carousel JS
-    wp_enqueue_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery-cdn'), null, true);
+	// Owl Carousel JS
+	wp_enqueue_script('owl-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js', array('jquery-cdn'), null, true);
 
-    // Main JS
-    wp_enqueue_script(
-        'main-js',
-        get_template_directory_uri() . '/assets/js/main.js',
-        array('jquery-cdn', 'owl-carousel'),
-        null,
-        true
-    );
+	// Main JS
+	wp_enqueue_script(
+		'main-js',
+		get_template_directory_uri() . '/assets/js/main.js',
+		array('jquery-cdn', 'owl-carousel'),
+		null,
+		true
+	);
+	wp_enqueue_style(
+		'main-css',
+		get_template_directory_uri() . '/assets/css/main.css',
+		array(),
+		_S_VERSION
+	);
 
 	wp_enqueue_style(
-    'style-css',
-    get_template_directory_uri() . '/assets/css/style.css',
-    array(),
-    _S_VERSION
-);
+		'style-css',
+		get_template_directory_uri() . '/assets/css/style.css',
+		array(),
+		_S_VERSION
+	);
 
 	//  for responsive css
 
 	wp_enqueue_style(
-    'responsive-css',
-    get_template_directory_uri() . '/assets/css/responsive.css',
-    array(),
-    _S_VERSION
-);
-
+		'responsive-css',
+		get_template_directory_uri() . '/assets/css/responsive.css',
+		array(),
+		_S_VERSION
+	);
 }
 add_action('wp_enqueue_scripts', 'belgravia_scripts');
 
@@ -215,7 +225,6 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-

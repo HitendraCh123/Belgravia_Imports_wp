@@ -454,6 +454,81 @@ get_header(); ?>
     </div>
   </section>
   <!-- Shop Wholesale Closed -->
+<style>
+.db-dragons {
+    background: #0a0a0a !important;
+    padding: 80px 0;
+    text-align: center;
+}
+	.db-dragons .caption{
+		color:white;
+	}
+</style>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <script>
+
+
+// Home Slide
+$('.home-slide').owlCarousel({
+  loop: true,
+  margin: 0,
+  dots: false,
+  items: 1,
+  nav: true,
+  navText: [
+    "<i class='fa fa-long-arrow-left'></i>",
+    "<i class='fa fa-long-arrow-right'></i>"
+  ],
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 3
+    },
+    1024: {
+      items: 3
+    }
+  }
+});
+
+
+// Clients Slide 
+$('.clients-slide').owlCarousel({
+  loop: true,
+  margin: 0,
+  dots: false,
+  items: 1,
+  nav: true,
+  navText: [
+    "<i class='fa fa-long-arrow-left'></i>",
+    "<i class='fa fa-long-arrow-right'></i>"
+  ],
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 3
+    },
+    1024: {
+      items: 4
+    }
+  }
+});
+</script>
+
+  <script>
+
+    document.querySelector(".toggle-bar").onclick = function () {
+      document.querySelector(".header-menu").classList.toggle("active");
+    }
+
+  </script>
+  
 <?php get_footer(); ?>

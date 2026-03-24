@@ -52,7 +52,7 @@ get_header(); ?>
 <!-- Coffee Schedule -->
 <section class="coffie-sedule">
   <div class="container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot+2025-10-01+at+8.48.06 PM.webp" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Screenshot_coffie-sedule.webp" alt="">
   </div>
 </section>
 

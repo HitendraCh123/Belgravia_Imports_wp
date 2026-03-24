@@ -89,7 +89,7 @@ get_header(); ?>
 </section>
 
   <!-- Product Range -->
-<section class="tt-range">
+   <section class="tt-range">
   <div class="container">
     <div class="section-header">
       <div class="eyebrow">The Collection</div>
@@ -158,7 +158,7 @@ get_header(); ?>
 
     </div>
   </div>
-</section>
+    </section>
   <!-- Product Range Closed -->
 
    <!-- slider -->
@@ -193,7 +193,7 @@ get_header(); ?>
 <style>
 /* ── tick-tock-video section ── */
 .db-dragons {
-  background: #13215c;
+  background: #13215c !important;
   padding: 80px 0;
   text-align: center;
 }

@@ -4,14 +4,26 @@
 get_header(); ?>
 
 
+
   <!-- Services Hero -->
-  <section class="services-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/service-page_bg.webp">
-    <div class="container">
-      <div class="inner">
-        <h1>Bring your unique flavors to America's table.</h1>
-        <p>You've built something extraordinary.<br>We make sure the U.S. market knows it, loves it, and buys it.</p>
-      </div>
-    </div>
+
+  <?php 
+$heading = get_field('hero_heading');
+$desc = get_field('hero_description');
+$bg = get_field('hero_background_image');
+?>
+
+  <section class="services-hero"
+       style="background-image: url('<?php echo $bg ? $bg['url'] : get_template_directory_uri().'/assets/images/service-page_bg.webp'; ?>');">
+       <div class="container">
+         <div class="inner">
+
+           <h1><?php echo $heading; ?></h1>
+   
+            <p><?php echo $desc; ?></p>
+
+         </div>
+        </div>
   </section>
   <!-- Services Hero Closed -->
 

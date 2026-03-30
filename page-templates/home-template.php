@@ -6,17 +6,25 @@ get_header(); ?>
 
 
   <!-- Company Info -->
-  <section class="company-info" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/team-from-above.jpg">
-    <div class="container">
-      <div class="inner-box">
-        <h1>Curating British and European excellence for North America's most discerning markets</h1>
-        <p>For nearly four decades, we've recognized and honored prestigious yet innovative British and European food,
-          beverage, and confectionery stars, connecting trusted producers with America's leading distributors,
-          retailers, and consumers through quiet confidence and proven long-term relationships. We don’t want American
-          consumers to have products that just taste good, we want them to have experiences they won’t soon forget.</p>
-    
-      </div>
-    </div>
+<?php 
+$heading = get_field('hero_heading');
+$desc = get_field('hero_description');
+$bg = get_field('hero_background_image');
+?>
+
+  <section class="company-info" 
+       style="background-image: url('<?php echo $bg ? $bg['url'] : get_template_directory_uri().'/assets/images/team-from-above.jpg'; ?>');">
+
+      <div class="container">
+         <div class="inner-box">
+
+           <h1><?php echo $heading; ?></h1>
+   
+            <p><?php echo $desc; ?></p>
+
+         </div>
+        </div>
+
   </section>
   <!-- Company Info Closed -->
 
@@ -24,33 +32,81 @@ get_header(); ?>
 <?php get_template_part('page-templates/brands', 'section'); ?>
 <!-- Brands section end -->
 
-  <!-- discover Brands -->
-  <section class="discover-brands">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 first-box">
-          <ul class="img-list">
 
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/brands-jelly-1.webp" alt=""></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/tea-with-cup.webp" alt=""></li>
-          </ul>
-        </div>
-        <div class="col-md-4 sec-box">
-          <h2>Discover our brands</h2>
-          <ul class="btn-list">
-            <li><a href="<?php echo site_url('/brands'); ?>">Explore</a></li>
-            <li><a href="<?php echo site_url('/contact'); ?>">Inquire</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4 third-box">
-          <ul class="img-list">
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/the-drinks-biscuits.webp" alt=""></li>
-            <li><img src="<?php echo get_template_directory_uri(); ?>/assets/images/snaks.webp" alt=""></li>
-          </ul>
-        </div>
+  <!-- discover Brands -->
+<?php 
+$heading = get_field('discover_heading');
+
+$img1 = get_field('discover_img1');
+$img2 = get_field('discover_img2');
+$img3 = get_field('discover_img3');
+$img4 = get_field('discover_img4');
+
+$btn1 = get_field('discover_btn1');
+$btn2 = get_field('discover_btn2');
+?>
+
+<section class="discover-brands">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-4 first-box">
+        <ul class="img-list">
+
+          <?php if($img1): ?>
+            <li><img src="<?php echo $img1['url']; ?>" alt=""></li>
+          <?php endif; ?>
+
+          <?php if($img2): ?>
+            <li><img src="<?php echo $img2['url']; ?>" alt=""></li>
+          <?php endif; ?>
+
+        </ul>
       </div>
+
+      <div class="col-md-4 sec-box">
+
+        <h2><?php echo $heading; ?></h2>
+
+        <ul class="btn-list">
+
+          <?php if($btn1): ?>
+            <li>
+              <a href="<?php echo $btn1['url']; ?>">
+                <?php echo $btn1['title']; ?>
+              </a>
+            </li>
+          <?php endif; ?>
+
+          <?php if($btn2): ?>
+            <li>
+              <a href="<?php echo $btn2['url']; ?>">
+                <?php echo $btn2['title']; ?>
+              </a>
+            </li>
+          <?php endif; ?>
+
+        </ul>
+
+      </div>
+
+      <div class="col-md-4 third-box">
+        <ul class="img-list">
+
+          <?php if($img3): ?>
+            <li><img src="<?php echo $img3['url']; ?>" alt=""></li>
+          <?php endif; ?>
+
+          <?php if($img4): ?>
+            <li><img src="<?php echo $img4['url']; ?>" alt=""></li>
+          <?php endif; ?>
+
+        </ul>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
   <!-- discover Brands Closed -->
 
  <!-- slider -->

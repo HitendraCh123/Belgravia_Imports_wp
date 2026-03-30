@@ -6,35 +6,23 @@
 <section class="home-slider">
   <div class="owl-carousel owl-theme home-slide">
 
-    <div class="item">
-      <div class="slide-content">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Healsi-Belgravia-Imports.webp" alt="">
-      </div>
-    </div>
+    <?php if(have_rows('home_slider')): ?>
+      <?php while(have_rows('home_slider')): the_row(); 
 
-    <div class="item">
-      <div class="slide-content">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/couple-slider-image-2.webp" alt="">
-      </div>
-    </div>
+        $img = get_sub_field('slide_image');
 
-    <div class="item">
-      <div class="slide-content">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rose-bud-product-1.webp" alt="">
-      </div>
-    </div>
+      ?>
 
-    <div class="item">
-      <div class="slide-content">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ticktok-slide-4.webp" alt="">
-      </div>
-    </div>
+        <?php if($img): ?>
+          <div class="item">
+            <div class="slide-content">
+              <img src="<?php echo $img['url']; ?>" alt="">
+            </div>
+          </div>
+        <?php endif; ?>
 
-    <div class="item">
-      <div class="slide-content">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/drinksss.webp" alt="">
-      </div>
-    </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
 
   </div>
 </section>

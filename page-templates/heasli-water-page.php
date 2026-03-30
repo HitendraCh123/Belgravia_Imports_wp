@@ -17,7 +17,7 @@ get_header(); ?>
         <p>Ten years of research revealed nature's rarest composition—balanced pH and extraordinary silica that
           detoxifies, strengthens, and transforms your body from within.</p>
         <div class="btn-row">
-          <a href="#" class="cta-btn"> <i class="fa fa-amazon" aria-hidden="true"></i>Shop on Amazon</a>
+          <a href="https://www.amazon.com/stores/Healsi/page/440E20AC-5BC3-4B0D-A1AC-DCB0A9A165F6?lp_asin=B08GLCBXF7&ref_=ast_bln" target="_blank" class="cta-btn"> <i class="fa fa-amazon" aria-hidden="true"></i>Shop on Amazon</a>
           <!-- <a href="#" class="cta-btn-outline">Wholesale on Faire</a> -->
         </div>
       </div>

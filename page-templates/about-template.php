@@ -4,106 +4,192 @@
 get_header(); ?>
 
     <!-- About Hero -->
-    <section class="about-hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/WAREHOUSING_large.webp">
-        <div class="container">
-            <div class="inner">
-                <h1>At Belgravia Imports, we don't just bring products to market—we architect culinary revolutions</h1>
-                <p>As visionary curators of the world's most extraordinary food, beverage, and confectionery brands, we
-                    identify and elevate exceptional products that redefine buyer's expectations and set new industry
-                    standards.</p>
-            </div>
+
+    <?php 
+$heading = get_field('hero_heading');
+$desc = get_field('hero_description');
+$bg = get_field('hero_background_image');
+?>
+    <section class="about-hero" 
+       style="background-image: url('<?php echo $bg ? $bg['url'] : get_template_directory_uri().'/assets/images/WAREHOUSING_large.webp'; ?>');">
+         <div class="container">
+         <div class="inner">
+
+           <h1><?php echo $heading; ?></h1>
+   
+            <p><?php echo $desc; ?></p>
+
+         </div>
+        </div>
         </div>
     </section>
     <!-- About Hero Closed -->
 
 
     <!-- Our Story -->
-    <section class="about-story">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-col">
-                    <h2>Our Story</h2>
-                    <p>Belgravia Imports is committed to all-natural and small, artisan producers that surprise and
-                        delight even the most sophisticated American consumer. Each of our brand partners has a
-                        compelling story behind their products, and we make sure those get out.</p>
-                    <p>Our sophisticated approach to brand building transforms promising international partners into
-                        market leaders, leveraging cutting-edge distribution strategies, data-driven insights, and our
-                        prestigious network of premium retail, e-commerce, and food/beverage service channels.</p>
-                    <p>With an unwavering commitment to innovation and excellence, we serve as the definitive gateway
-                        for discerning brands seeking to captivate the world's most influential market, establishing
-                        ourselves as the trusted authority where culinary artistry meets commercial success.</p>
-                </div>
-                <div class="col-md-6 img-col">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/restaurantes-romanticos-en-nueva-york-190108105239001.jpg" alt="Our Story">
-                    <img class="accent-img" src="<?php echo get_template_directory_uri(); ?>/assets/images/Belgravia+1.png" alt="Belgravia Detail">
-                </div>
+<section class="about-story">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-col">
+        
+                <h2><?php the_field('about_story_title'); ?></h2>
+
+                <p><?php the_field('about_story_content'); ?></p>
+
             </div>
+
+            <div class="col-md-6 img-col">
+  
+                <?php $img1 = get_field('story_main_image'); ?>
+                <?php if($img1): ?>
+                <img src="<?php echo $img1['url']; ?>" alt="">
+                <?php endif; ?>
+                <?php $img2 = get_field('story_assent_image'); ?>
+                <?php if($img2): ?>
+                <img class="accent-img" src="<?php echo $img2['url']; ?>" alt="">
+                <?php endif; ?>
+
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <!-- Our Story Closed -->
 
-<!-- Brands logo secion -->
-<?php get_template_part('page-templates/logos', 'section'); ?>
-<!-- Brands logo secion end -->
+    <!-- Our Values -->
+  <section class="about-values">
+    <div class="container">
+
+        <div class="section-header">
+            <h2><?php the_field('values_heading'); ?></h2>
+            <p><?php the_field('values_subheading'); ?></p>
+        </div>
+
+        <div class="row">
+
+            <?php if(have_rows('values_items')): ?>
+                <?php while(have_rows('values_items')): the_row(); ?>
+
+                    <div class="col-md-3">
+                        <div class="value-item">
+
+                            <?php $icon = get_sub_field('icon'); ?>
+                            <div class="icon">
+                                <img src="<?php echo $icon['url']; ?>" alt="">
+                            </div>
+
+                            <h4><?php the_sub_field('title'); ?></h4>
+                            <p><?php the_sub_field('description'); ?></p>
+
+                        </div>
+                    </div>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Our Values Closed -->
+
+    <!-- Brands logo secion -->
+
+       <?php get_template_part('page-templates/logos', 'section'); ?>
+
+    <!-- Brands logo secion end -->
 
     <!-- Gallery -->
-    <section class="about-gallery">
-        <div class="container-fluid">
-            <div class="container section-header">
-                <h2>Since 1987, Curating the Best</h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Image1_Belgravia.webp" alt="">
-                </div>
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/savoursmith-product-1.webp"
-                        alt="Savoursmiths">
-                </div>
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dirnks-bakery-product-1.webp"
-                        alt="The Drinks Bakery">
-                </div>
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/tick-tock-product-1.webp"
-                        alt="Tick Tock Tea">
-                </div>
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/healsi-water-product.webp"
-                        alt="Healsi Water">
-                </div>
-                <div class="img-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/rose-bud-product-1.webp"
-                        alt="Rosebud Preserves">
-                </div>
-            </div>
+   <?php $heading = get_field('gallery_heading'); ?>
+  <section class="about-gallery">
+    <div class="container-fluid">
+
+        <div class="container section-header">
+            <?php if($heading): ?>
+                <h2><?php echo $heading; ?></h2>
+            <?php endif; ?>
         </div>
-    </section>
+
+        <div class="gallery-grid">
+
+            <?php if(have_rows('about_gallery')): ?>
+                <?php while(have_rows('about_gallery')): the_row(); 
+
+                    $img = get_sub_field('gallery_image');
+                    $alt = get_sub_field('gallery_alt');
+
+                ?>
+
+                    <?php if($img): ?>
+                        <div class="img-item">
+                            <img src="<?php echo $img['url']; ?>" alt="<?php echo $alt ? $alt : ''; ?>">
+                        </div>
+                    <?php endif; ?>
+
+                <?php endwhile; ?>
+            <?php endif; ?>
+
+        </div>
+
+    </div>
+  </section>
     <!-- Gallery Closed -->
 
 
         <!-- CTA -->
-    <section class="about-cta">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Belgravia+1.png" alt="Ronnie and Lilly Dick"
-                        style="width:100%;border-radius:12px;">
-                </div>
-                <div class="col-md-7">
-                    <h2>Founded by Ronnie and Lilly Dick</h2>
-                    <p>Our family business began with a simple belief: American consumers deserved access to the world's
-                        finest
-                        specialty foods. What started as a passion for quality has grown into a trusted partnership with
-                        producers who share our commitment to premium, healthy, and authentic products.</p>
-                    <div class="btn-row">
-                 <a href="<?php echo site_url('/brands'); ?>" class="cta-btn">Explore Our Brands</a>
-              <a href="<?php echo site_url('/contact'); ?>" class="cta-btn-outline">Get In Touch</a>
-                    </div>
-                </div>
+  <?php 
+$img = get_field('cta_image');
+$heading = get_field('cta_heading');
+$desc = get_field('cta_description');
+$btn1 = get_field('cta_btn_1');
+$btn2 = get_field('cta_btn_2');
+?>
+
+<section class="about-cta">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-md-5">
+
+                <?php if($img): ?>
+                    <img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>" 
+                         style="width:100%;border-radius:12px;">
+                <?php endif; ?>
+
             </div>
+
+            <div class="col-md-7">
+
+                <?php if($heading): ?>
+                    <h2><?php echo $heading; ?></h2>
+                <?php endif; ?>
+
+                <?php if($desc): ?>
+                    <?php echo $desc; ?>
+                <?php endif; ?>
+
+                <div class="btn-row">
+
+                    <?php if($btn1): ?>
+                        <a href="<?php echo $btn1['url']; ?>" class="cta-btn">
+                            <?php echo $btn1['title']; ?>
+                        </a>
+                    <?php endif; ?>
+
+                    <?php if($btn2): ?>
+                        <a href="<?php echo $btn2['url']; ?>" class="cta-btn-outline">
+                            <?php echo $btn2['title']; ?>
+                        </a>
+                    <?php endif; ?>
+
+                </div>
+
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
     <!-- CTA Closed -->
 
 
